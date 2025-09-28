@@ -1,0 +1,111 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Navbar */
+.navbar {
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Search Panel */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group .form-control {
+    border-radius: 0;
+}
+
+.input-group .btn {
+    border-radius: 0;
+}
+
+/* Weather Display */
+#cityList {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#cityList h2 {
+    margin-top: 0;
+}
+
+#cityList img {
+    width: 100px;
+    height: 100px;
+}
+
+/* 5-Day Forecast */
+#days .card {
+    background: #007bff;
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#days .card h5 {
+    margin-top: 0;
+}
+
+/* Recently Searched Cities */
+#historyList {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#historyList button {
+    margin: 5px 0;
+    width: 100%;
+    text-align: left;
+}
+
+
+/* Background Image */
+body.sunny {
+    background-image: url('sunny.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body.cloudy {
+    background-image: url('cloudy.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body.rainy {
+    background-image: url('rainy.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body.snowy {
+    background-image: url('snowy.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

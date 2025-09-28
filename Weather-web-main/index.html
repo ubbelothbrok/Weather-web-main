@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.34/moment-timezone-with-data.min.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+    <!-- Header Weather Dashboard  -->
+    <nav class="navbar navbar-dark bg-dark">
+        <h1>Weather Dashboard</h1>
+        <div id="currentDay" class="text-center"></div>
+    </nav>
+    <!-- Main Content Container -->
+    <div class="container mt-4">
+        <!-- Search Form with Button -->
+        <div class="row mb-4">
+            <div class="col-md-8 offset-md-2">
+                <div class="input-group">
+                    <input id="city-input" type="text" class="form-control" placeholder="Enter City Name"
+                        aria-label="Enter city name">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button" id="search-button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+                <button class="btn btn-secondary mt-2" type="button" id="clear-history">Clear History</button>
+            </div>
+        </div>
+        <!-- Main Content Row -->
+        <div class="row">
+            <!-- Weather Information Column -->
+            <div class="col-lg-8 offset-lg-2">
+                <div id="cityList" class="mb-4">
+                    <h3>City Name:</h3>
+                </div>
+                <!-- 5 Days Weather Forecast list here -->
+                <div class="row" id="days"></div>
+            </div>
+        </div>
+        <!-- Recently Searched Cities -->
+        <div class="row mt-4">
+            <div class="col-lg-8 bg-light offset-lg-2 p-3">
+                <h6>Recently searched cities:</h6>
+                <ul class="list-unstyled" id="historyList"></ul>
+            </div>
+        </div>
+    </div>
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
